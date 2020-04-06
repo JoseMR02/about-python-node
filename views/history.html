@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Python</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="aye">Best Language?<br>Python.</h1>
+    </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/upsides">Upsides</a>
+    <a href="/downsides">Downsides</a>
+    <a href="/history" class="current">History</a>
+  </nav>
+
+  <br /><br />
+  <div>
+    <h2>Back in My Day...</h2>
+      <img src="/img/guido.jpg" alt="Guido" height = "300" width = "350">
+  <p>
+    Development for the language started in the mid 1980s by Guido van Rossum. Originally, its indent-based format was seen as a bad idea, but ultimately it encouraged and led to very easy-to-read code. As Donald Knuth once said, “Programs are meant to be read by humans and only incidentally for computers to execute."
+    </p>
+
+    <p id="facts">
+      hey
+    </p>
+</div>
+  <%- include('partials/footer.ejs') %>
+  <script>
+  $( document ).ready(function() {
+      let firstName = faker.name.firstName();
+      let lastName = faker.name.lastName();
+      let jobTitle = faker.name.jobTitle();
+      let prefix = faker.name.prefix(); 
+      let suffix = faker.name.suffix();
+      let jobArea = faker.name.jobArea();
+      $("#facts").append("hey");
+      console.log("hey");
+      
+
+  // Handler for .ready() called.
+});
+          
+ 
+  </script>
+
+</html>
+

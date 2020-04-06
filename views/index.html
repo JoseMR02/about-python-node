@@ -1,0 +1,28 @@
+ 
+ <%- include('partials/nav.ejs') %>
+<nav>
+  <a href="/" class = "current">Home</a>
+  <a href="/upsides">Upsides</a>
+  <a href="/downsides">Downsides</a>
+  <a href="/history">History</a>
+</nav>
+  
+  <br><br>
+  <p> 
+    In this website, you will learn a few basic things about Python. Hopefully it will be your favorite language after reading through :)
+  </p>
+ <img src="/img/python-logo.jpg" alt="Python Logo" height = "250" width = "250">
+
+  <%- include('partials/footer.ejs') %>
+
+   </body>
+
+   <h1>
+      <%=data%>
+   </h1>
+
+   <% if (data) { %>
+  <h2>Hello</h2>
+<% } %>
+</html>
+
